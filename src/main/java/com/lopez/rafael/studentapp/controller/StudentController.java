@@ -11,4 +11,9 @@ public class StudentController {
     public ModelAndView login() {
         return new ModelAndView("login");
     }
+
+    @GetMapping("/home")
+    public ModelAndView home() {
+        return new ModelAndView("home");
+    }
 }
