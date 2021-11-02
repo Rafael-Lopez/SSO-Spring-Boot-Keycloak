@@ -8,9 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class StudentController {
 
-    @GetMapping(value = {"/", "login"})
-    public ModelAndView login() {
-        return new ModelAndView("login");
+    @GetMapping("/contact-us")
+    public ModelAndView contactUs() {
+        return new ModelAndView("contact-us");
     }
 
     @GetMapping("/home")
