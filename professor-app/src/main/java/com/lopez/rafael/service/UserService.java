@@ -1,16 +1,16 @@
-package com.infybuzz.service;
+package com.lopez.rafael.service;
 
+import com.lopez.rafael.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.infybuzz.entity.User;
-import com.infybuzz.repository.UserRepository;
+import com.lopez.rafael.entity.User;
 
 @Service
 public class UserService {
 
 	@Autowired
-	UserRepository userRepository;
+    UserRepository userRepository;
 	
 	public User getUserByUsername(String username) {
 		return userRepository.findByUsername(username);

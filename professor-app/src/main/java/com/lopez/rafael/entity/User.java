@@ -1,4 +1,4 @@
-package com.infybuzz.entity;
+package com.lopez.rafael.entity;
 
 import java.util.Set;
 

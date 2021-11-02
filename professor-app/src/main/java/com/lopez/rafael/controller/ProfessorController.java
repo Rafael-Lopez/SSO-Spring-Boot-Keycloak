@@ -1,4 +1,4 @@
-package com.infybuzz.controller;
+package com.lopez.rafael.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
