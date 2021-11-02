@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="container">
-		<h2 class="form-signin-heading">Welcome <span th:text = "${#authentication.getPrincipal().getUsername()}"></span></h2>
+		<h2 class="form-signin-heading">Welcome <span th:text = "${#authentication.getPrincipal()}"></span></h2>
 	
 		<a href="/professor/logout">Logout</a>
 	
