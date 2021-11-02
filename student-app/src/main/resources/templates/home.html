@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <!-- 'authetication' is provided by Spring Security, and Thymeleaf is able to retrieve it -->
-        <h2 class="form-signin-heading">Welcome <span th:text = "${#authentication.getPrincipal().getUsername()}"></span></h2>
+        <h2 class="form-signin-heading">Welcome <span th:text = "${#authentication.getPrincipal()}"></span></h2>
         <a href="/logout">Logout</a>
     </div>
 </body></html>

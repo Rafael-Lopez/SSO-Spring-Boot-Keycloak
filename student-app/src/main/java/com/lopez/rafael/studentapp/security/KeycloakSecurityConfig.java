@@ -38,7 +38,7 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
         http
                 .authorizeRequests()
                 // Only Contact Us page does not redirect to Keycloak to authenticate
-                .antMatchers("contact-us").permitAll()
+                .antMatchers("/contact-us").permitAll()
                 // All other pages need Keycloak to authenticate
                 .anyRequest().authenticated()
                 .and().exceptionHandling().accessDeniedPage("/access-denied");
